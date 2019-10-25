@@ -32,6 +32,10 @@ _THIS IS A WORK IS PROGRESS_
 - item
 - item
 
+## Architecture
+
+...
+
 ## Usage
 
 ...
