@@ -15,16 +15,19 @@
 	</a>
 </p>
 
-# EOSIO ReactJS Starter
+# TELOS ReactJS Starter
 
-Minimalistic project template to jump start a project with dFuse, Transit API, ReactJS and TypeScript.
-
-
-_THIS IS A WORK IS PROGRESS_
+Jumpstart your TELOS ReactJS project with TypeScript, Hooks, Theme UI, Wallets and i18n support.
 
 ## Motivation
 
-...
+We obsess over dApp performance, both on the blockchain and the front-end client. Over 50% of people will abandon a mobile site if it takes more than 3 seconds to load. Unless you’re willing to give up half of your potential customers, performance is no longer optional on the modern web.
+
+React is a high performant framework backed by Facebook that allows to build modern single page applications, that means no page reloads. 
+
+- It is lightweight.
+- It has a large ecosystem (tools and components) and community (support).
+- It allows you to write composable code (which is always desirable).
 
 ## Features
 
@@ -35,6 +38,26 @@ _THIS IS A WORK IS PROGRESS_
 ## Architecture
 
 ...
+
+## File Structure
+
+```
+.
+├── components ......................................... Reusable Components
+│   ├── Button.tsx
+│   ├── Form.tsx
+│   ├── NavBar.tsx
+│   └── ...
+├── hooks .............................................. React Hooks
+│   ├── myhook.js
+│   └── ...
+├── routes ............................................. Route Container Components
+│   ├── Users.tsx
+│   └── ...
+├── public ............................................. Static file serving
+└── library ............................................ Scripts, Services, SDKS,...
+    └── amplify.ts
+```
 
 ## Usage
 
