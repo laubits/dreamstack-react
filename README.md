@@ -19,25 +19,43 @@
 
 Jumpstart your TELOS ReactJS project with TypeScript, Hooks, Theme UI, Wallets and i18n support.
 
-## Motivation
+## ReactJS
 
-We obsess over dApp performance, both on the blockchain and the front-end client. Over 50% of people will abandon a mobile site if it takes more than 3 seconds to load. Unless you’re willing to give up half of your potential customers, performance is no longer optional on the modern web.
+Next.js extends React to provide a powerful method for loading a page's initial data, no matter where it is coming from. React is a high performant framework backed by Facebook that allows to build modern single page applications, that means no page reloads. This is the technology we have chosen for the User Interface because:
 
-React is a high performant framework backed by Facebook that allows to build modern single page applications, that means no page reloads. 
-
-- It is lightweight.
 - It has a large ecosystem (tools and components) and community (support).
+- It is lightweight.
 - It allows you to write composable code (which is always desirable).
+
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=WsmgDnHOWh4">
+		<img src="https://monosnap.com/image/thWXLTTerX96Rnn8IhqujvNvlx5wa1.png" width="600">
+	</a>
+</p>
+
+## TELOS
+
+Best in class C++ EOSIO protocol technology providing fast, scalable and eco-freindly blockchain augmented by a growing library of Telos services and innovations. Free accounts, work proposals, dapp grants, decentralized exchange, dstor, bancor protocol, telos community and foundation.
+
+## Disclaimer
+
+This is a work in progress. Feel free to reach us out on telegram for clarifications.
+https://t.me/blockmatic
 
 ## Features
 
-- item
-- item
-- item
-
-## Architecture
-
-...
+- [x] TypeScript.
+- [x] Blockmatic code conventions. ( functional, declarative, hooks )
+- [x] Pre-commit code quality git hooks with husky, prettier and eslint.
+- [x] CSS-in-JS styling based on design system constraints with Theme UI.
+- [x] Automatic transpilation and bundling (with webpack and babel).
+- [ ] Multilanguage (i18n) with i18next.
+- [x] Non relative (absolute) imports.
+- [ ] Component Error Boundaries.
+- [x] Hot code reloading.
+- [ ] Automatic testing with Jest.
+- [ ] Serverless continuous deployment with Netlify.
+- ...
 
 ## File Structure
 
@@ -63,19 +81,75 @@ React is a high performant framework backed by Facebook that allows to build mod
 
 ...
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+### `yarn lint && yarn lint --fix`
+
+... eslint
+
+### `yarn format`
+
+... prettier
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## TELOS DreamStack
+
+This repository is part of the TELOS DreamStack Project which provides set of guidelines, tools and starters to speed up dApp development following best practices for security, performance and maintainability of your application.
+
+The code style convention aims to maximize reusability and facilitate collaboration. We have chosen the stack carefully so that it allows us to write robust and performant applications with more concise and readable code.
+
 ## Contributing
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.
-
-## License
-
-MIT © Blockmatic
 
 ---
 
 ## Blockmatic
 
-Blockmatic is building robust ecosystem of people and tools for development of decentralized applications (dApps) and fintech solutions.
+Blockmatic is building robust ecosystem of people and tools for development of decentralized applications.
 
 [blockmatic.io](https://blockmatic.io)
 
