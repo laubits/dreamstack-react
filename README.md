@@ -27,12 +27,6 @@ Next.js extends React to provide a powerful method for loading a page's initial 
 - It is lightweight.
 - It allows you to write composable code (which is always desirable).
 
-<p align="center">
-	<a href="https://www.youtube.com/watch?v=WsmgDnHOWh4">
-		<img src="https://monosnap.com/image/thWXLTTerX96Rnn8IhqujvNvlx5wa1.png" width="600">
-	</a>
-</p>
-
 ## TELOS
 
 Best in class C++ EOSIO protocol technology providing fast, scalable and eco-freindly blockchain augmented by a growing library of Telos services and innovations. Free accounts, work proposals, dapp grants, decentralized exchange, dstor, bancor protocol, telos community and foundation.
@@ -134,7 +128,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-
 ## TELOS DreamStack
 
 This repository is part of the TELOS DreamStack Project which provides set of guidelines, tools and starters to speed up dApp development following best practices for security, performance and maintainability of your application.
@@ -144,8 +137,6 @@ The code style convention aims to maximize reusability and facilitate collaborat
 ## Contributing
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.
-
----
 
 ## Blockmatic
 
