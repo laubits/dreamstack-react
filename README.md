@@ -38,17 +38,20 @@ https://t.me/blockmatic
 
 ## Features
 
-- [x] TypeScript.
+- [ ] Wallet integration with EOS Transit thru @blockmatic/eosio-hooks
+- [ ] Basic demo page. Read data example and docs.
+- [ ] Push transactions example.
+- [x] Functional TypeScript.
 - [x] Blockmatic code conventions. ( functional, declarative, hooks )
 - [x] Pre-commit code quality git hooks with husky, prettier and eslint.
 - [x] CSS-in-JS styling based on design system constraints with Theme UI.
 - [x] Automatic transpilation and bundling (with webpack and babel).
 - [ ] Multilanguage (i18n) with i18next.
-- [x] Non relative (absolute) imports.
+- [ ] Non relative (absolute) imports.
 - [ ] Component Error Boundaries.
 - [x] Hot code reloading.
-- [ ] Automatic testing with Jest.
 - [ ] Serverless continuous deployment with Netlify.
+- [ ] Automatic testing with Jest.
 - ...
 
 ## File Structure
