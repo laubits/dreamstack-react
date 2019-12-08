@@ -19,6 +19,12 @@
 
 Jumpstart your TELOS ReactJS project with TypeScript, Hooks, Theme UI, Wallets and i18n support.
 
+## TELOS
+
+Best in class C++ EOSIO protocol technology providing fast, scalable and eco-freindly blockchain augmented by a growing library of Telos services and innovations. Free accounts, work proposals, dapp grants, decentralized exchange, dstor, bancor protocol, telos community and foundation.
+
+[Learn more](https://docs.telosdreamstack.io/smart-contracts/telos-blockchain)
+
 ## ReactJS
 
 Next.js extends React to provide a powerful method for loading a page's initial data, no matter where it is coming from. React is a high performant framework backed by Facebook that allows to build modern single page applications, that means no page reloads. This is the technology we have chosen for the User Interface because:
@@ -26,12 +32,6 @@ Next.js extends React to provide a powerful method for loading a page's initial 
 - It has a large ecosystem (tools and components) and community (support).
 - It is lightweight.
 - It allows you to write composable code (which is always desirable).
-
-## TELOS
-
-Best in class C++ EOSIO protocol technology providing fast, scalable and eco-freindly blockchain augmented by a growing library of Telos services and innovations. Free accounts, work proposals, dapp grants, decentralized exchange, dstor, bancor protocol, telos community and foundation.
-
-[Learn more](https://docs.telosdreamstack.io/smart-contracts/telos-blockchain)
 
 ## Disclaimer
 
