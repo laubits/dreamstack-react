@@ -21,6 +21,7 @@ export default {
     primary: '#6c2d8d',
     secondary: '#30c',
     muted: '#f6f6f6',
+    heading:'#6c2d8d'
   },
   styles: {
     root: {
@@ -29,7 +30,7 @@ export default {
       fontWeight: 'body',
     },
     h1: {
-      color: 'text',
+      color: 'heading',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
