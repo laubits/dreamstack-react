@@ -49,8 +49,8 @@ https://t.me/telosdreamstack
 - [x] CSS-in-JS styling based on design system constraints with Theme UI.
 - [x] Automatic transpilation and bundling (with webpack and babel).
 - [ ] Multilanguage (i18n) with i18next.
-- [ ] Non relative (absolute) imports.
-- [ ] Component Error Boundaries.
+- [x] Non relative (absolute) imports.
+- [x] Component Error Boundaries.
 - [x] Hot code reloading.
 - [ ] Serverless continuous deployment with Netlify.
 - [ ] Automatic testing with Jest.
