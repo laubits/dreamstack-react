@@ -1,9 +1,10 @@
 {
   "extends": "./node_modules/@blockmatic/tsconfig/tsconfig.app.json",
   "compilerOptions": {
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "./src",
   },
   "include": [
     "src"
-  ]
+  ],
 }
