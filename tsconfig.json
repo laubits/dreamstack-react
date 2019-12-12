@@ -3,6 +3,7 @@
   "compilerOptions": {
     "skipLibCheck": true,
     "baseUrl": "./src",
+    "jsx": "preserve",
   },
   "include": [
     "src"
