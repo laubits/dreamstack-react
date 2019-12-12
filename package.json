@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./**/*.tsx",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --write ./**/*.tsx"
   },
   "lint-staged": {
