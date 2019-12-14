@@ -9,11 +9,6 @@ import theme from 'theme'
 type AppProviderProps = {
   children: JSX.Element
 }
-export default function AppProvider({children}: AppProviderProps) {
-  return (
-    <ThemeProvider theme={theme}>
-      {children}
-    </ThemeProvider>
-  )
+export default function AppProvider({ children }: AppProviderProps) {
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
-

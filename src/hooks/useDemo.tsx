@@ -1,17 +1,17 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 type Data = {
-  hello:string
+  hello: string
 }
 
-const defaultData = {hello:'.....'}
+const defaultData = { hello: '.....' }
 
 export default function useDemo() {
   const [data, setData] = useState<Data>(defaultData)
 
-  useEffect(()=>{
-    setData({hello: 'Hola'})
-  },[])
+  useEffect(() => {
+    setData({ hello: 'Hola' })
+  }, [])
 
   return data
 }

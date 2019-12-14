@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <AppProvider>
-        <Home/>
+        <Home />
       </AppProvider>
     </div>
   )

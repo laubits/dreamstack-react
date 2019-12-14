@@ -21,7 +21,7 @@ export default {
     primary: '#6c2d8d',
     secondary: '#30c',
     muted: '#f6f6f6',
-    heading:'#6c2d8d'
+    heading: '#6c2d8d',
   },
   styles: {
     root: {
