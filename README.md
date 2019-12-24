@@ -15,7 +15,7 @@
 	</a>
 </p>
 
-# TELOS ReactJS Starter
+# DreamStack ReactJS Starter
 
 Jumpstart your TELOS ReactJS project with TypeScript, Hooks, Theme UI, Wallets and i18n support.
 
