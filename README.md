@@ -78,12 +78,6 @@ https://t.me/telosdreamstack
 
 ## Usage
 
-...
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/telosdreamstack/telos-react-starter)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -157,6 +151,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
+### Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/telosdreamstack/telos-react-starter)
+
+
 ## TELOS DreamStack
 
 This repository is part of the TELOS DreamStack Project which provides set of guidelines, tools and starters to speed up dApp development following best practices for security, performance and maintainability of your application.
@@ -166,6 +165,24 @@ The code style convention aims to maximize reusability and facilitate collaborat
 ## Contributing
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.
+
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://gaboesquivel.com"><img src="https://avatars0.githubusercontent.com/u/391270?v=4" width="100px;" alt="Gabo Esquivel"/><br /><sub><b>Gabo Esquivel</b></sub></a><br /><a href="#ideas-gaboesquivel" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/telosdreamstack/dreamstack-react/commits?author=gaboesquivel" title="Code">💻</a> <a href="#review-gaboesquivel" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://rfreites.now.sh/"><img src="https://avatars1.githubusercontent.com/u/16639855?v=4" width="100px;" alt="Ronny"/><br /><sub><b>Ronny</b></sub></a><br /><a href="#ideas-rfreites" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/telosdreamstack/dreamstack-react/commits?author=rfreites" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ## Blockmatic
 

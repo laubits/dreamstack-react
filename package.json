@@ -18,18 +18,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ignore-path .gitignore '**/*.+(js|ts|tsx)'",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\"",
     "check-types": "tsc",
-    "prettier": "prettier --ignore-path .gitignore --write '**/*.+(js|json|ts|tsx)'",
-    "format": "yarn prettier --write",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "check-format": "yarn prettier --list-different",
     "validate": "yarn check-types && yarn check-format && yarn lint && yarn build"
   },
   "lint-staged": {
     "*.js": [
       "prettier --write",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "husky": {
