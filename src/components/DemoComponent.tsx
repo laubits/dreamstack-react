@@ -37,7 +37,7 @@ const SUBSCRIPTION = gql`
 `
 
 export default function DemoComponent() {
-  const { data } = useSubscription(SUBSCRIPTION, { variables: { account_name: 'dreamstackio0-01-29' } })
+  const { data } = useSubscription(SUBSCRIPTION, { variables: { account_name: 'dreamstackio' } })
 
   return <Styled.pre>{JSON.stringify(data, null, 2)}</Styled.pre>
 }

@@ -10,12 +10,12 @@ import { OneOrMoreChildren } from 'types'
 
 // Create an http link:
 const httpLink = new HttpLink({
-  uri: 'http://graph.telosdreamstack.io/graphiql',
+  uri: 'http://mainnet.graph.telosdreamstack.io/v1/graphql',
 })
 
 // Create a WebSocket link:
 const wsLink = new WebSocketLink({
-  uri: 'ws://graph.telosdreamstack.io/graphiql',
+  uri: 'ws://mainnet.graph.telosdreamstack.io/v1/graphql',
   options: {
     reconnect: true,
   },
@@ -35,7 +35,9 @@ const link = split(
 
 // create client with inMemoryCache
 const apolloClient = new ApolloClient({
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({
+    addTypename: false,
+  }),
   link,
 })
 
