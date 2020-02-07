@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui'
-import { Grid, Flex, Image, Heading } from '@theme-ui/components'
-
+import { Grid, Flex, Image, Heading, Button } from '@theme-ui/components'
+import { useTranslation } from 'react-i18next'
 import { useSubscription } from '@apollo/react-hooks'
 import gql from 'graphql-tag'
 
@@ -41,15 +41,36 @@ const SUBSCRIPTION = gql`
 
 export default function DemoComponent() {
   const { data } = useSubscription(SUBSCRIPTION, { variables: { account_name: 'dreamstackio' } })
+  const { t } = useTranslation(['demo'])
+  const { i18n } = useTranslation()
 
+  const handlerChangeLang = (e: Event) => {
+    e.preventDefault()
+    let lng = ''
+    if (t('lang') === 'English') {
+      lng = 'en'
+    } else {
+      lng = 'es'
+    }
+    i18n.changeLanguage(lng)
+  }
   return (
     <div>
-      <Flex bg="primary" p={2}>
-        <Heading as="h3" p={3} color="background">
-          React Started
+      <Grid bg="primary" p={2} gap={1} columns={[2, 2, 2]}>
+        <Heading as="h3" color="background">
+          {t('started')}
         </Heading>
-      </Flex>
-      <Grid gap={2} columns={[1, 2, 2]} px={0} py={0}>
+        <Flex
+          sx={{
+            justifyContent: 'flex-end',
+          }}
+        >
+          <Button onClick={handlerChangeLang} variant="secondary">
+            {t('lang')}
+          </Button>
+        </Flex>
+      </Grid>
+      <Grid gap={2} columns={[2, 2, 2]} px={0} py={0}>
         <div
           sx={{
             display: 'flex',
@@ -71,15 +92,7 @@ export default function DemoComponent() {
           }}
         >
           <Heading as="h1" color="primary">
-            TELOS{' '}
-            <span
-              sx={{
-                fontFamily: 'Source Sans Pro',
-                fontWeight: 'body',
-              }}
-            >
-              Dreamstack
-            </span>
+            {t('telos')}
           </Heading>
         </div>
       </Grid>

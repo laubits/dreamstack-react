@@ -42,6 +42,7 @@ export const theme = {
     h1: {
       variant: 'text.heading',
       fontSize: 5,
+      textAlign: 'center',
     },
     h2: {
       variant: 'text.heading',
@@ -98,6 +99,19 @@ export const theme = {
       padding: 0,
       maxWidth: '25%',
       margin: '0 auto',
+    },
+  },
+  buttons: {
+    primary: {
+      color: 'background',
+      bg: 'primary',
+      '&:hover': {
+        bg: 'text',
+      },
+    },
+    secondary: {
+      color: 'background',
+      bg: 'secondary',
     },
   },
 }
