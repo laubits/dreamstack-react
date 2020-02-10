@@ -1,6 +1,6 @@
 // example base theme from @theme-ui/presets
 export const theme = {
-  breakpoints: ['40em', '52em', '64em'],
+  breakpoints: ['30em', '40em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: '"Gothic A1" , Roboto, "Helvetica Neue", sans-serif',
@@ -24,6 +24,7 @@ export const theme = {
     primary: '#7E479B',
     secondary: '#4E179B',
     muted: '#F7F8FC',
+    dark: '#272C33',
   },
   text: {
     heading: {
@@ -101,6 +102,18 @@ export const theme = {
       margin: '0 auto',
     },
   },
+  links: {
+    nav: {
+      px: 2,
+      py: 2,
+      color: 'text',
+      transition: 'all 0.5s',
+      '&:hover': {
+        transform: 'scale(1.2)',
+        color: 'background',
+      },
+    },
+  },
   buttons: {
     primary: {
       color: 'background',
@@ -112,6 +125,14 @@ export const theme = {
     secondary: {
       color: 'background',
       bg: 'secondary',
+    },
+    menu: {
+      color: 'background',
+      cursor: 'pointer',
+    },
+    close: {
+      color: 'background',
+      cursor: 'pointer',
     },
   },
 }
