@@ -5,10 +5,11 @@ export const theme = {
   fonts: {
     body: '"Gothic A1" , Roboto, "Helvetica Neue", sans-serif',
     heading: 'Lato',
-    subheading: 'Poppins',
+    numbers: 'Poppins',
+    subheads: 'Muli',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 96],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -123,8 +124,13 @@ export const theme = {
       },
     },
     secondary: {
-      color: 'background',
-      bg: 'secondary',
+      color: 'primary',
+      bg: 'rgba(255, 255, 255, 0.6)',
+      fontFamily: 'subheads',
+      textAlign: 'center',
+      fontSize: [0, 1, 2],
+      px: [2, 3, 4],
+      py: [0],
     },
     menu: {
       color: 'background',
@@ -133,6 +139,11 @@ export const theme = {
     close: {
       color: 'background',
       cursor: 'pointer',
+    },
+  },
+  container: {
+    linearBG: {
+      background: 'linear-gradient(180deg, rgba(126,71,155,1) 0%, rgba(126,71,155,1) 70%, rgba(255,255,255,1) 70%)',
     },
   },
 }
