@@ -1,7 +1,9 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Flex, Container, Box, Text, Button, IconButton } from '@theme-ui/components'
-import { MdArrowUpward } from 'react-icons/md'
+import { Flex, Container, Box, Text, Button } from '@theme-ui/components'
+import { MdArrowUpward, MdKeyboardArrowRight } from 'react-icons/md'
+import { Link } from 'react-router-dom'
+import logo from 'assets/mini.svg'
 
 export default function Wallet() {
   return (
@@ -77,28 +79,78 @@ export default function Wallet() {
               justifyContent: 'space-around',
             }}
           >
-            <IconButton aria-label="Toggle dark mode">
-              <div>
-                <img src="assets/64X64.png" alt="" />
-              </div>
-            </IconButton>
+            <div
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                bg: 'primary',
+                width: 48,
+                height: 48,
+                borderRadius: 100,
+              }}
+            >
+              <img
+                sx={{
+                  display: 'block',
+                  border: 0,
+                }}
+                src={logo}
+                alt="logo"
+              />
+            </div>
+
             <Flex
               sx={{
                 flexDirection: 'column',
               }}
             >
-              <Text>Token</Text>
-              <Text>5000 tokens</Text>
+              <Text
+                sx={{
+                  color: 'text',
+                  fontFamily: 'body',
+                  fontSize: [0, 1, 2],
+                  textTransform: 'uppercase',
+                }}
+              >
+                Token
+              </Text>
+              <Text
+                sx={{
+                  color: 'text',
+                  fontFamily: 'numbers',
+                  fontSize: [0, 1, 2],
+                  fontWeight: 300,
+                }}
+              >
+                5000 token
+              </Text>
             </Flex>
             <Flex
               sx={{
-                justifyItems: 'end',
-                alignContent: 'end',
-                alignItems: 'end',
+                justifyItems: 'center',
+                alignContent: 'center',
+                alignItems: 'center',
               }}
             >
-              {' '}
-              <Text>5000 > </Text>{' '}
+              <Text
+                sx={{
+                  color: 'text',
+                  fontFamily: 'numbers',
+                  fontSize: [0, 1, 2],
+                  fontWeight: 300,
+                }}
+              >
+                <Link
+                  sx={{
+                    color: 'text',
+                    textDecoration: 'none',
+                  }}
+                  to="/wallet/details"
+                >
+                  5000 <MdKeyboardArrowRight />
+                </Link>
+              </Text>
             </Flex>
           </Flex>
         </div>
