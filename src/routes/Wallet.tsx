@@ -1,11 +1,25 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import { Flex, Container, Box, Text, Button } from '@theme-ui/components'
-import { MdArrowUpward, MdKeyboardArrowRight } from 'react-icons/md'
-import { Link } from 'react-router-dom'
-import logo from 'assets/mini.svg'
+import { MdArrowUpward } from 'react-icons/md'
+import Balance from 'components/Balance'
+import { useSubscription } from '@apollo/react-hooks'
+import gql from 'graphql-tag'
+
+const BALANCE = gql`
+  subscription balances {
+    balances(where: { account_name: { _eq: "gaboesquivel" } }) {
+      account_name
+      amount
+      currency
+      decimals
+    }
+  }
+`
 
 export default function Wallet() {
+  const { data } = useSubscription(BALANCE)
+
   return (
     <Container variant="container.linearBG" py={5}>
       <Flex
@@ -35,7 +49,7 @@ export default function Wallet() {
                 textAlign: 'center',
               }}
             >
-              $10,000
+              $ {((data?.balances[0].amount + data?.balances[1].amount) * 0.04078936).toFixed(4)}
             </Text>
             <Text
               sx={{
@@ -73,86 +87,9 @@ export default function Wallet() {
             minWidth: ['20em', '30em', '40em', '48em'],
           }}
         >
-          <Flex
-            sx={{
-              my: 3,
-              justifyContent: 'space-around',
-            }}
-          >
-            <div
-              sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                bg: 'primary',
-                width: 48,
-                height: 48,
-                borderRadius: 100,
-              }}
-            >
-              <img
-                sx={{
-                  display: 'block',
-                  border: 0,
-                }}
-                src={logo}
-                alt="logo"
-              />
-            </div>
-
-            <Flex
-              sx={{
-                flexDirection: 'column',
-              }}
-            >
-              <Text
-                sx={{
-                  color: 'text',
-                  fontFamily: 'body',
-                  fontSize: [0, 1, 2],
-                  textTransform: 'uppercase',
-                }}
-              >
-                Token
-              </Text>
-              <Text
-                sx={{
-                  color: 'text',
-                  fontFamily: 'numbers',
-                  fontSize: [0, 1, 2],
-                  fontWeight: 300,
-                }}
-              >
-                5000 token
-              </Text>
-            </Flex>
-            <Flex
-              sx={{
-                justifyItems: 'center',
-                alignContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              <Text
-                sx={{
-                  color: 'text',
-                  fontFamily: 'numbers',
-                  fontSize: [0, 1, 2],
-                  fontWeight: 300,
-                }}
-              >
-                <Link
-                  sx={{
-                    color: 'text',
-                    textDecoration: 'none',
-                  }}
-                  to="/wallet/details"
-                >
-                  5000 <MdKeyboardArrowRight />
-                </Link>
-              </Text>
-            </Flex>
-          </Flex>
+          {data?.balances.map((item: any) => (
+            <Balance item={item} key={item.amount} />
+          ))}
         </div>
       </Flex>
     </Container>
