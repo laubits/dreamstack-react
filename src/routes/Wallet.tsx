@@ -17,7 +17,7 @@ export default function Wallet() {
         <Flex
           sx={{
             flexGrow: 1,
-            justifyContent: 'center',
+            justifyContent: 'flex-end',
             alignItems: 'center',
             width: ['20em', '30em', '45em'],
             margin: '0 auto',
@@ -26,7 +26,7 @@ export default function Wallet() {
           <Box>
             <Text
               sx={{
-                fontSize: [2, 4, 5, 6],
+                fontSize: [3, 5, 6, 7],
                 fontWeight: 'normal',
                 color: 'background',
                 fontFamily: 'numbers',
@@ -37,7 +37,7 @@ export default function Wallet() {
             </Text>
             <Text
               sx={{
-                fontSize: [0, 1],
+                fontSize: ['6px', 0],
                 fontWeight: 'body',
                 color: 'background',
                 fontFamily: 'subheads',
@@ -68,7 +68,7 @@ export default function Wallet() {
             my: 3,
             backgroundColor: 'background',
             borderRadius: '10px  10px 0 0',
-            minWidth: ['20em', '30em'],
+            minWidth: ['20em', '30em', '40em', '48em'],
           }}
         >
           <Flex

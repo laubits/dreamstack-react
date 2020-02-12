@@ -128,8 +128,8 @@ export const theme = {
       bg: 'rgba(255, 255, 255, 0.6)',
       fontFamily: 'subheads',
       textAlign: 'center',
-      fontSize: [0, 1, 2],
-      px: [2, 3, 4],
+      fontSize: [0, 1, 2, 3],
+      px: [1, 2, 3, 4],
       py: [0],
     },
     menu: {
