@@ -41,7 +41,7 @@ export default function Navbar() {
         flexBasis: 'sidebar',
         bg: 'dark',
         minHeight: ['auto', '100vh'],
-        minWidth: ['100vw', 'auto', 'auto', 'auto'],
+        minWidth: ['100vw', 'auto', 'auto', 'auto', 'auto'],
       }}
     >
       {!isOpen ? (

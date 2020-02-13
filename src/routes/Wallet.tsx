@@ -85,7 +85,7 @@ export default function Wallet() {
             my: 3,
             backgroundColor: 'background',
             borderRadius: '10px  10px 0 0',
-            minWidth: ['20em', '30em', '40em', '48em'],
+            minWidth: ['20em', '20em', '30em', '30em', '46em'],
           }}
         >
           {data?.balances.map((item: any) => (

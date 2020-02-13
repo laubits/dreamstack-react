@@ -1,6 +1,6 @@
 // example base theme from @theme-ui/presets
 export const theme = {
-  breakpoints: ['30em', '40em', '52em', '64em'],
+  breakpoints: ['30em', '40em', '48em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: '"Gothic A1" , Roboto, "Helvetica Neue", sans-serif',

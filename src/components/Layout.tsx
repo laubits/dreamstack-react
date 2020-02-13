@@ -8,8 +8,8 @@ export default function Layout({ children }: OneOrMoreChildren) {
     <div
       sx={{
         display: 'flex',
-        flexWrap: ['wrap', 'nowrap', 'nowrap', 'nowrap'],
-        flexDirection: ['column', 'row', 'row', 'row'],
+        flexWrap: ['wrap', 'nowrap', 'nowrap', 'nowrap', 'nowrap'],
+        flexDirection: ['column', 'row', 'row', 'row', 'row'],
       }}
     >
       <Navbar />
