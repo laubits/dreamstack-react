@@ -49,7 +49,7 @@ export default function Wallet() {
                 textAlign: 'center',
               }}
             >
-              {/* //TODO change this for data from oracles ${' '} */}
+              {/* {TODO change this for data from oracles */} ${' '}
               {((data?.balances[0].amount + data?.balances[1].amount) * 0.04078936).toFixed(4)}
             </Text>
             <Text
