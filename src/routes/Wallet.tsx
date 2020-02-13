@@ -49,7 +49,8 @@ export default function Wallet() {
                 textAlign: 'center',
               }}
             >
-              $ {((data?.balances[0].amount + data?.balances[1].amount) * 0.04078936).toFixed(4)}
+              //TODO change this for data from oracles ${' '}
+              {((data?.balances[0].amount + data?.balances[1].amount) * 0.04078936).toFixed(4)}
             </Text>
             <Text
               sx={{
