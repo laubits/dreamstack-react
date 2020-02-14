@@ -89,7 +89,7 @@ export default function Wallet() {
           }}
         >
           {data?.balances.map((item: any) => (
-            <Balance item={item} key={item.amount} />
+            <Balance item={item} key={`key_${item.currency}_${item.amount}`} />
           ))}
         </div>
       </Flex>
