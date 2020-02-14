@@ -1,12 +1,19 @@
 /** @jsx jsx */
-
 import { jsx } from 'theme-ui'
 import { Flex, Text } from '@theme-ui/components'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import logo from 'assets/mini.svg'
 
-export default function Balance({ item }: any) {
+type BalanceProps = {
+  item: {
+    currency: string
+    amount: string
+  }
+}
+
+export default function Balance({ item }: BalanceProps) {
+  const { currency, amount } = item
   return (
     <Flex
       sx={{
@@ -48,7 +55,7 @@ export default function Balance({ item }: any) {
             textTransform: 'uppercase',
           }}
         >
-          {item.currency}
+          {currency}
         </Text>
         <Text
           sx={{
@@ -58,7 +65,7 @@ export default function Balance({ item }: any) {
             fontWeight: 300,
           }}
         >
-          {item.amount} {item.currency}
+          {amount} {currency}
         </Text>
       </Flex>
       <Flex
@@ -83,7 +90,7 @@ export default function Balance({ item }: any) {
             }}
             to="/wallet/details"
           >
-            {item.amount} <MdKeyboardArrowRight />
+            {amount} <MdKeyboardArrowRight />
           </Link>
         </Text>
       </Flex>
