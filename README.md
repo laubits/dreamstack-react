@@ -16,155 +16,46 @@
 
 # DreamStack ReactJS Starter
 
-Jumpstart your TELOS ReactJS project with TypeScript, Hooks, Theme UI, Wallets and i18n support.
+Jumpstart your TELOS ReactJS project. Focus on your project features, we already did the rest for you.
 
-## TELOS
-
-Best in class C++ EOSIO protocol technology providing fast, scalable and eco-freindly blockchain augmented by a growing library of Telos services and innovations. Free accounts, work proposals, dapp grants, decentralized exchange, dstor, bancor protocol, telos community and foundation.
-
-[Learn more](https://docs.telosdreamstack.io/smart-contracts/telos-blockchain)
-
-## ReactJS
-
-Next.js extends React to provide a powerful method for loading a page's initial data, no matter where it is coming from. React is a high performant framework backed by Facebook that allows to build modern single page applications, that means no page reloads. This is the technology we have chosen for the User Interface because:
-
-- It has a large ecosystem (tools and components) and community (support).
-- It is lightweight.
-- It allows you to write composable code (which is always desirable).
-
-## Disclaimer
-
-This is a work in progress. Feel free to reach us out on telegram for clarifications.
-https://t.me/telosdreamstack
+The Telos DreamStack application starters provide a robust, performant and efficient architectural framework along with a rich set of tools for developers including: key management, wallet integration, real-time blockchain data subscriptions though GraphQL, internationalization, accessibility support, reactive async, automated pipelines and code quality checks.
 
 ## Features
 
-- [ ] Wallet integration with EOS Transit thru @blockmatic/eosio-hooks
-- [ ] Basic demo page. Read data example and docs.
-- [ ] Push transactions example.
-- [x] Functional TypeScript.
-- [x] Blockmatic code conventions. ( functional, declarative, hooks )
+Dreamstack React is ready to deploy TELOS web wallet starter with the following features you leverage on your project: 
+
+- [ ] User session management and wallet integration using EOS Transit.
+- [ ] Realtime balances and account permissions through GraphQL.
+- [ ] Multilanguage (i18n) with i18next.
+- [ ] Customizable UI theme. ThemeUI.
+- [ ] Token Transfers. 
+
+### Developer experience 
+
+- [x] Excellent documentation and support. (github and telegram)
+- [x] Blockmatic code conventions. ( typescript, functional, declarative, hooks )
 - [x] Pre-commit code quality git hooks with husky, prettier and eslint.
 - [x] CSS-in-JS styling based on design system constraints with Theme UI.
 - [x] Automatic transpilation and bundling (with webpack and babel).
-- [ ] Multilanguage (i18n) with i18next.
 - [x] Non relative (absolute) imports.
-- [x] Component Error Boundaries.
+- [x] Component error boundaries.
 - [x] Hot code reloading.
-- [ ] Serverless continuous deployment with Netlify.
-- [ ] Automatic testing with Jest.
-- ...
+- [x] Serverless continuous deployment with Netlify.
 
-## File Structure
+## Architecture
 
-```
-.
-├── components ......................................... Reusable Components
-│   ├── Button.tsx
-│   ├── Form.tsx
-│   ├── NavBar.tsx
-│   └── ...
-├── hooks .............................................. React Hooks
-│   ├── useCustomHook.js
-│   └── ...
-├── routes ............................................. Route Container Components
-│   ├── Users.tsx
-│   └── ...
-├── public ............................................. Static file serving
-└── library ............................................ Scripts, Services, SDKS,...
-    └── amplify.ts
-```
+This application starter follows the design conventions of the [Hooks Architecture](https://github.com/blockmatic/hooks-architecture), a flexible and idiomatic architecture toolkit for modern React and React Native apps. Make sure you read through to fully understand the philosophy and coding conventions.
 
-## Usage
+## Disclaimer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-### `yarn lint && yarn lint --fix`
-
-... eslint
-
-### `yarn format`
-
-... prettier
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-## Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-## Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-## Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-## Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/telosdreamstack/telos-react-starter)
-
+This is a work in progress. Join the telegram channel for more information.  
+https://t.me/telosdreamstack
 
 ## TELOS DreamStack
 
-This repository is part of the TELOS DreamStack Project which provides set of guidelines, tools and starters to speed up dApp development following best practices for security, performance and maintainability of your application.
+This repository is part of the TELOS DreamStack Project which provides a set of guidelines, tools and starters to speed up dApp development following best practices for security, performance and maintainability of your application.
 
-The code style convention aims to maximize reusability and facilitate collaboration. We have chosen the stack carefully so that it allows us to write robust and performant applications with more concise and readable code.
-
-## Contributing
-
-Read the [contributing guidelines](https://developers.blockmatic.io) for details.
-
+https://telosdreamstack.io
 
 ## Contributors ✨
 
@@ -183,6 +74,18 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Contributing
+
+[Contributing Guide](./CONTRIBUTING.md)
+
+[Code of Conduct](./CONTRIBUTING.md#conduct)
+
+## Important
+
+See [LICENSE](./LICENSE) for copyright and license terms.
+
+All repositories and other materials are provided subject to the terms of this [IMPORTANT](./IMPORTANT.md) notice and you must familiarize yourself with its terms. The notice contains important information, limitations and restrictions relating to our software, publications, trademarks, third-party resources, and forward-looking statements. By accessing any of our repositories and other materials, you accept and agree to the terms of the notice.
 
 ## Blockmatic
 
@@ -203,16 +106,15 @@ Blockmatic is building a robust ecosystem of people and tools for the developmen
 
 <!-- icons with padding -->
 
-[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
-[3.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+[1.1]: http://i.imgur.com/tXSoThF.png 'twitter icon with padding'
+[2.1]: http://i.imgur.com/P3YfQoD.png 'facebook icon with padding'
+[3.1]: http://i.imgur.com/0o48UoR.png 'github icon with padding'
 
 <!-- icons without padding -->
 
-[1.2]: http://i.imgur.com/wWzX9uB.png (twitter icon without padding)
-[2.2]: http://i.imgur.com/fep1WsG.png (facebook icon without padding)
-[3.2]: http://i.imgur.com/9I6NRUm.png (github icon without padding)
-
+[1.2]: http://i.imgur.com/wWzX9uB.png 'twitter icon without padding'
+[2.2]: http://i.imgur.com/fep1WsG.png 'facebook icon without padding'
+[3.2]: http://i.imgur.com/9I6NRUm.png 'github icon without padding'
 
 <!-- links to your social media accounts -->
 <!-- update these accordingly -->
