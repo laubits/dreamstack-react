@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { jsx, Flex } from 'theme-ui'
-import { NavLink } from '@theme-ui/components'
+import { jsx } from 'theme-ui'
+import { NavLink, Flex } from '@theme-ui/components'
 import { Link } from 'react-router-dom'
 import { MdHome, MdAccountBalanceWallet } from 'react-icons/md'
 import { useTranslation } from 'react-i18next'
 
-export default function Navlinks() {
+const Navlinks = () => {
   const { t } = useTranslation(['navbar'])
   return (
     <Flex
@@ -26,3 +26,5 @@ export default function Navlinks() {
     </Flex>
   )
 }
+
+export default Navlinks
