@@ -4,6 +4,7 @@ import { Grid, Flex, Image, Heading, Button } from '@theme-ui/components'
 import { useTranslation } from 'react-i18next'
 import { useSubscription } from '@apollo/react-hooks'
 import gql from 'graphql-tag'
+import { useTransit } from '@blockmatic/eosio-hooks'
 
 import logo from 'assets/logo.svg'
 const SUBSCRIPTION = gql`
@@ -20,20 +21,17 @@ const SUBSCRIPTION = gql`
 `
 // TODO: move translation button to settings area
 export default function DemoComponent() {
+  const { connectScatter, transitState } = useTransit()
   const { data } = useSubscription(SUBSCRIPTION)
   const { t } = useTranslation(['demo'])
   const { i18n } = useTranslation()
 
-  const handlerChangeLang = (e: Event) => {
-    e.preventDefault()
-    let lng = ''
-    if (t('lang') === 'English') {
-      lng = 'en'
-    } else {
-      lng = 'es'
-    }
-    i18n.changeLanguage(lng)
+  const handleChangeLang = () => {
+    i18n.changeLanguage(t('lang') === 'English' ? 'en' : 'es')
   }
+
+  const handleLogin = () => connectScatter()
+
   return (
     <div>
       <Grid bg="primary" p={2} gap={1} columns={[2, 2, 2]}>
@@ -45,8 +43,11 @@ export default function DemoComponent() {
             justifyContent: 'flex-end',
           }}
         >
-          <Button onClick={handlerChangeLang} variant="secondary">
+          <Button onClick={handleChangeLang} variant="secondary">
             {t('lang')}
+          </Button>
+          <Button onClick={handleLogin} variant="secondary">
+            login
           </Button>
         </Flex>
       </Grid>
@@ -77,6 +78,8 @@ export default function DemoComponent() {
         </div>
       </Grid>
       <Styled.pre>{JSON.stringify(data, null, 2)}</Styled.pre>
+      <h2>Scatter Data</h2>
+      <Styled.pre>{JSON.stringify(transitState, null, 2)}</Styled.pre>
     </div>
   )
 }

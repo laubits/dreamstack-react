@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 import { MenuButton, Close } from '@theme-ui/components'
 import Navlinks from 'components/navigation/Navlinks'
+
 const sideVariants = {
   open: { width: 280 },
   closed: { width: 40 },
