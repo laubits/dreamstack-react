@@ -1,12 +1,12 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import AppProvider from 'components/AppProvider'
+import AppProvider from './AppProvider'
 import { Switch, Route } from 'react-router-dom'
 import Layout from 'components/Layout'
-import Home from 'routes/Home'
-import Wallet from 'routes/Wallet'
+import Home from 'views/Home'
+import Wallet from 'views/Wallet'
 
-function App() {
+const App: React.FC = () => {
   return (
     <AppProvider>
       <Layout>

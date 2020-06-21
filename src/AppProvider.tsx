@@ -4,14 +4,13 @@ import { theme } from 'theme'
 import { BrowserRouter } from 'react-router-dom'
 import { TransitProvider } from '@blockmatic/eosio-hooks'
 import { transitConfig } from 'config/transit'
-import { OneOrMoreChildren } from 'types'
 
 import GraphQLProvider from 'components/GraphQLProvider'
 
 import { I18nextProvider } from 'react-i18next'
 import i18n from 'config/i18n'
 
-export default function AppProvider({ children }: OneOrMoreChildren) {
+const AppProvider: React.FC = ({ children }) => {
   return (
     <GraphQLProvider>
       <BrowserRouter>
@@ -24,3 +23,5 @@ export default function AppProvider({ children }: OneOrMoreChildren) {
     </GraphQLProvider>
   )
 }
+
+export default AppProvider

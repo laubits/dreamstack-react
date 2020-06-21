@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import { useRef, useState } from 'react'
-// import { OneOrMoreChildren } from 'types'
 import { motion } from 'framer-motion'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 import { MenuButton, Close } from '@theme-ui/components'

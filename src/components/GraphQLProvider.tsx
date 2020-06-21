@@ -6,7 +6,6 @@ import { getMainDefinition } from 'apollo-utilities'
 import { ApolloClient } from 'apollo-client'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { ApolloProvider } from '@apollo/react-hooks'
-import { OneOrMoreChildren } from 'types'
 
 // Create an http link:
 const httpLink = new HttpLink({
@@ -41,6 +40,8 @@ const apolloClient = new ApolloClient({
   link,
 })
 
-export default function GraphQLProvider({ children }: OneOrMoreChildren) {
+const GraphQLProvider: React.FC = ({ children }) => {
   return <ApolloProvider client={apolloClient}>{children}</ApolloProvider>
 }
+
+export default GraphQLProvider

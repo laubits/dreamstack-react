@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { OneOrMoreChildren } from 'types'
 import Navbar from 'components/navigation/Navbar'
 
-export default function Layout({ children }: OneOrMoreChildren) {
+const Layout: React.FC = ({ children }) => {
   return (
     <div
       sx={{
@@ -25,3 +24,5 @@ export default function Layout({ children }: OneOrMoreChildren) {
     </div>
   )
 }
+
+export default Layout
