@@ -46,16 +46,11 @@ Dreamstack React is ready to deploy TELOS web wallet starter with the following 
 
 This application starter follows the design conventions of the [Hooks Architecture](https://github.com/blockmatic/hooks-architecture), a flexible and idiomatic architecture toolkit for modern React and React Native apps. Make sure you read through to fully understand the philosophy and coding conventions.
 
-## Disclaimer
+## DreamStack
 
-This is a work in progress. Join the telegram channel for more information.  
-https://t.me/telosdreamstack
+This repository is part of the TELOS DreamStack Project which provides a set of guidelines, tools and starters to speed up dApp development following best practices for security, performance and maintainability. The project is maintained by [blockmatic.io](https://blockmatic.io) and it's sponsored by the TELOS token holders through the [Telos Works -Telos Worker Proposal System](https://medium.com/telos-foundation/telos-user-guide-understanding-worker-proposals-ef5df8ee2a17)
 
-## TELOS DreamStack
-
-This repository is part of the TELOS DreamStack Project which provides a set of guidelines, tools and starters to speed up dApp development following best practices for security, performance and maintainability of your application.
-
-https://telosdreamstack.io
+Learn more https://telosdreamstack.io
 
 ## Contributors ✨
 
@@ -86,6 +81,11 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 See [LICENSE](./LICENSE) for copyright and license terms.
 
 All repositories and other materials are provided subject to the terms of this [IMPORTANT](./IMPORTANT.md) notice and you must familiarize yourself with its terms. The notice contains important information, limitations and restrictions relating to our software, publications, trademarks, third-party resources, and forward-looking statements. By accessing any of our repositories and other materials, you accept and agree to the terms of the notice.
+
+## Disclaimer
+
+This is a work in progress. Join the telegram channel for more information.  
+https://t.me/telosdreamstack
 
 ## Blockmatic
 
